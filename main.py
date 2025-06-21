@@ -39,13 +39,13 @@ if selected == "Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         image = Image.open("images/diabetes.webp")  # Replace with your image path
-        st.image(image, caption="Diabetes", use_column_width=True)
+        st.image(image, caption="Diabetes", use_container_width=True)
     with col2:
         image = Image.open("images/heart.jpg")  # Replace with your image path
-        st.image(image, caption="Heart Disease", use_column_width=True)
+        st.image(image, caption="Heart Disease", use_container_width=True)
     with col3:
         image = Image.open("images/parkinsons.jpg")  # Replace with your image path
-        st.image(image, caption="Parkinson's Disease", use_column_width=True)
+        st.image(image, caption="Parkinson's Disease", use_container_width=True)
     
     st.write("Click on a disease in the sidebar to predict.")
 
