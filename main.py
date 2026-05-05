@@ -17,7 +17,7 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 # Sidebar for navigation
 selected = st.sidebar.radio(
     "Navigation",
-    options=["Home", "Diabetes Prediction", "Heart Disease Prediction", "Parkinson's Prediction"]
+    options=["Home", "Diabetes Prediction", "Heart Disease Prediction", "Parkinson's Prediction", "About"]
 )
 
 # Home Page - Information about Diseases
@@ -188,3 +188,19 @@ elif selected == "Parkinson's Prediction":
         parkinsons_diagnosis = "The person has Parkinson's disease" if parkinsons_prediction[0] == 1 else "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
+
+    # About Page
+    elif selected == "About":
+    st.title("About")
+
+    st.markdown(
+        """
+        ## ❤️ Made with Love  
+
+        This project is built with passion and dedication to help people with health predictions using Machine Learning.
+
+        **Made by:**  
+        ### Kunwar Uttkarsh Singh
+        """
+    )
