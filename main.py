@@ -190,8 +190,8 @@ elif selected == "Parkinson's Prediction":
     st.success(parkinsons_diagnosis)
 
 
-    # About Page
-    elif selected == "About":
+# About Page
+elif selected == "About":
     st.title("About")
 
     st.markdown(
